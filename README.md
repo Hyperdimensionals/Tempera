@@ -2,7 +2,7 @@
 
 ## Description
 
-Create temperature objects which return their value in a set 'global' unit scale - either Celsius, Fahrenheit, or Kelvin - using the method <b>getTemperature()</b>. When the Global temperature scale is changed, all temperatures objects are returned in that scale.
+Create temperature objects which return their value in a set 'global' unit scale - either Celsius, Fahrenheit, or Kelvin - using the method <b>getTemperature()</b>. When the Global temperature scale is changed, all temperature objects are returned in that scale.
 
 I created this module to easily convert multiple temperatures displayed on a GUI when a user selects a different scale. I imagine it could be useful any time one has multiple persistant temperatures that need to undergo unit conversion at will.
 
@@ -20,7 +20,7 @@ If you want a specific Temperature object to return <b>self.getTemperature()</b>
 
 Set the number of decimal places with the <b>decimal_place</b> keyword argument:
 ```python
-temp1 = Temperature.Temperature(12, decimal_place=2)
+temp1 = temperature.Temperature(12, decimal_place=2)
 ```
 Or with <b>self.setDecimalPlace(int)</b>. The default decimal place is 2. <i>None</i> will always return a rounded integer.
 
@@ -28,7 +28,7 @@ Or with <b>self.setDecimalPlace(int)</b>. The default decimal place is 2. <i>Non
 
 Temperature objects can also represent intervals instead of actual temperatures with the keyword argument <b>isinterval=True</b>. For example, if you wanted to represent an interval of 3 celsius units:
 ```python
-temp_interval = Temperature.Temperature(3, isinterval=True)
+temp_interval = temperature.Temperature(3, isinterval=True)
 
 print(temp1.C + temp_interval.C)  # Adds 3 celsius to temp1 and prints
 ```
