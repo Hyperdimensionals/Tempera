@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tempera",
-    version="1.0.1",
+    version="1.0.0",
     author="Brendan Krueger",
     author_email="atleasticanbe@gmail.com",
     description="Convert and return temperature objects in set global scale.",
