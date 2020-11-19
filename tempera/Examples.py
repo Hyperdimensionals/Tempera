@@ -1,4 +1,5 @@
 import temperature
+from tempera import K, C, F
 
 # Create temperature objects directly, in celsius:
 temp1 = temperature.Temperature(12, decimal_place=None)
@@ -7,9 +8,9 @@ temp3 = temperature.Temperature(30)  # Default decimal place is 2
 
 # Or create them using a value in a specific temperature scale
 # Supported scales: Kelvin, Celsius, and Fahrenheit:
-temp1 = temperature.K(0, decimal_place=None)
-temp2 = temperature.C(18, decimal_place=1)
-temp3 = temperature.F(86)
+temp1 = K(0, decimal_place=None)
+temp2 = C(18, decimal_place=1)
+temp3 = F(86)
 
 print("Temperatures:")
 print(F"temp1 - F: {temp1.f}, C: {temp1.C}, K: {temp1.K}")
