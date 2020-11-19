@@ -13,9 +13,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Hyperdimensionals/tempera",
     project_urls={
-        # 'Documentation': 'https://',
-        # 'Funding': 'https://',
-        # 'Source': 'https://github.com/',
+        'Source': 'https://github.com/Hyperdimensionals/tempera',
+        'Donate': 'https://www.paypal.com/donate?hosted_button_id=3C7CBND5MJ5RE',
     },
     packages=setuptools.find_packages(),
     classifiers=[
