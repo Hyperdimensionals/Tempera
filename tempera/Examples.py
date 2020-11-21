@@ -1,4 +1,8 @@
-import temperature
+from tempera import temperature  # Lower case 'temperature' is entire module
+                                 # uppercase 'Temperature' is main class only
+
+# import these 'shortcut' functions to make temperature objects from values
+# in the specified scale:
 from tempera import K, C, F
 
 # Create temperature objects directly, in celsius:

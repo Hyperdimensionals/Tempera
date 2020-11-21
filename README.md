@@ -24,7 +24,7 @@ from tempera import Temperature
 
 temp1 = Temperature(12, decimal_place=2)
 ```
-Or with <b>self.setDecimalPlace(int)</b>. The default decimal place is 2. <i>None</i> will always return a rounded integer.
+Or with <b>self.setDecimalPlace(int)</b>, where <i>int</i> is an integer. The default decimal place is 2. Setting to <i>None</i> will always return a rounded integer.
 
 ### Intervals
 
