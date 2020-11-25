@@ -8,9 +8,11 @@ I created this module to easily convert multiple temperatures displayed on a GUI
 
 ## Using this Module
 
-The Global temperature scale can be set with the method <b>self.setGlobalScale()</b>. All Temperature objects will return in this scale with <b>self.getTemperature()</b>. 
+The Global temperature scale can be set with the method <b>self.setGlobalScale()</b>, which accepts a string representing a unit scale - either 'c', 'f', or 'k', or the full word ('celsius', etc). All Temperature objects will return in this scale with <b>self.getTemperature()</b>. 
 
 Set or return from a specific scale using <b>self.c</b> for Celsius, <b>self.f</b> for Fahrenheit, and <b>self.k</b> for Kelvin.
+
+See examples file for a more thorough outline of features.
 
 ### Local Scales
 
@@ -37,4 +39,4 @@ print(temp1.C + temp_interval.C)  # Adds 3 celsius to temp1 and prints
 
 ## How it functions
 
-The temperature is stored internally in Celsius. All setting and getting of the temperature in different scales is a conversion from this 'private' celsius attribute. This attribute is not rounded. Any rounding is done when <b>getTemperature()</b> (or a similar method) is called, so setting a decimal place does not affect the internally stored temperature.
+The temperature is stored internally in celsius. All setting and getting of the temperature in different scales is a conversion from this 'private' celsius attribute. This attribute is not rounded. Any rounding is done when <b>getTemperature()</b> (or a similar method) is called, so setting a decimal place does not affect the internally stored temperature.
